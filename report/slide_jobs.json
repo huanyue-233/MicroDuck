@@ -1,0 +1,444 @@
+{
+  "run_status": "slides_recorded",
+  "deck_name": "microduck_academic_report",
+  "selected_backend": "Wokey GPT-image-2.5 direct API",
+  "sample_generation_method": {
+    "backend_used": "Wokey GPT-image-2.5 direct API",
+    "tool_name": "Wokey /v1/images/generations direct HTTP",
+    "mode": "generate",
+    "model": "gpt-image-2.5",
+    "size_requested": "2560x1440",
+    "size_returned": "1672x941",
+    "quality": "provider auto",
+    "prompt_source": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\sample_slide_03_prompt.txt",
+    "approved_sample_path": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_03.png",
+    "input_context_preparation": "工作者先查看第 3 页样例，然后用完整文字风格说明调用 Wokey 文生图；样例不是严格输入资产。",
+    "handoff_rule": "沿用 Wokey gpt-image-2.5 直接 API、支持异步任务。不得用本地绘图叠字；API 不可用时报告阻塞。"
+  },
+  "max_concurrent_slides": 4,
+  "slides": [
+    {
+      "slide_id": "slide_01",
+      "number": 1,
+      "title": "MicroDuck 复现方案",
+      "job": "prompts/slide_01.json",
+      "out": "origin_image/slide_01.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_03.png",
+          "role": "已批准样例，仅用于视觉风格参照",
+          "fidelity": "匹配配色、字重、密度和信息图气质；不复制页面布局或文字"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "main-wokey-retry",
+        "agent_nickname": "Wokey retry",
+        "prompt": "prompts/slide_01.json",
+        "prompt_sha256": "d0f98f86d0f4257f08e8b75ff4e5f0520529f342a77e128421df424504765503",
+        "dispatched_at": "2026-09-25T04:38:15Z"
+      },
+      "result": {
+        "agent_id": "main-wokey-retry",
+        "backend_used": "Wokey GPT-image-2.5 direct API",
+        "selected_source": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_01.png",
+        "selected_source_sha256": "1fdca6599690eb6457c32a6630fde4e46e2d702b652a28c59a9f08bd0a704f02",
+        "final_image": "origin_image/slide_01.png",
+        "final_image_sha256": "1fdca6599690eb6457c32a6630fde4e46e2d702b652a28c59a9f08bd0a704f02",
+        "expected_backend": "Wokey GPT-image-2.5 direct API",
+        "expected_backend_labels": [
+          "Wokey GPT-image-2.5 direct API",
+          "Wokey /v1/images/generations direct HTTP"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Recovered after provider retry; Chinese title and subtitle are legible; style matches approved sample.",
+        "recorded_at": "2026-09-25T04:39:01Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_02",
+      "number": 2,
+      "title": "为什么复现 MicroDuck 很难",
+      "job": "prompts/slide_02.json",
+      "out": "origin_image/slide_02.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_03.png",
+          "role": "已批准样例，仅用于视觉风格参照",
+          "fidelity": "匹配配色、字重、密度和信息图气质；不复制页面布局或文字"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "main-wokey-retry",
+        "agent_nickname": "Wokey retry",
+        "prompt": "prompts/slide_02.json",
+        "prompt_sha256": "41a9df7bb2b2e1c587d6a892d48ad2860a0219704e9782a91dbc4b02f511b3c1",
+        "dispatched_at": "2026-09-25T04:38:15Z"
+      },
+      "result": {
+        "agent_id": "main-wokey-retry",
+        "backend_used": "Wokey GPT-image-2.5 direct API",
+        "selected_source": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_02.png",
+        "selected_source_sha256": "92f36403fc9ec6099ab4a2cf0f843983eec3359e6522053b638912c20e9bfba7",
+        "final_image": "origin_image/slide_02.png",
+        "final_image_sha256": "92f36403fc9ec6099ab4a2cf0f843983eec3359e6522053b638912c20e9bfba7",
+        "expected_backend": "Wokey GPT-image-2.5 direct API",
+        "expected_backend_labels": [
+          "Wokey GPT-image-2.5 direct API",
+          "Wokey /v1/images/generations direct HTTP"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Problem-framing infographic is readable and consistent with approved sample.",
+        "recorded_at": "2026-09-25T04:39:01Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_03",
+      "number": 3,
+      "title": "MicroDuck 的五层系统模型",
+      "job": "prompts/slide_03.json",
+      "out": "origin_image/slide_03.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_03.png",
+          "role": "已批准样例，仅用于视觉风格参照",
+          "fidelity": "匹配配色、字重、密度和信息图气质；不复制页面布局或文字"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_03.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_04",
+      "number": 4,
+      "title": "开源资料与社区项目地图",
+      "job": "prompts/slide_04.json",
+      "out": "origin_image/slide_04.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_03.png",
+          "role": "已批准样例，仅用于视觉风格参照",
+          "fidelity": "匹配配色、字重、密度和信息图气质；不复制页面布局或文字"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "main-wokey-retry",
+        "agent_nickname": "Wokey retry",
+        "prompt": "prompts/slide_04.json",
+        "prompt_sha256": "8cec9897fbfb914c4cdfb03ab2cb7a6f1a73580bf048b06f29b53c1f424f434a",
+        "dispatched_at": "2026-09-25T04:38:15Z"
+      },
+      "result": {
+        "agent_id": "main-wokey-retry",
+        "backend_used": "Wokey GPT-image-2.5 direct API",
+        "selected_source": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_04.png",
+        "selected_source_sha256": "b54e334f3d0b54804a248fd2774a0ffa5367fdd2ea3dfbceb22af3a55b5942fc",
+        "final_image": "origin_image/slide_04.png",
+        "final_image_sha256": "b54e334f3d0b54804a248fd2774a0ffa5367fdd2ea3dfbceb22af3a55b5942fc",
+        "expected_backend": "Wokey GPT-image-2.5 direct API",
+        "expected_backend_labels": [
+          "Wokey GPT-image-2.5 direct API",
+          "Wokey /v1/images/generations direct HTTP"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Project ecosystem map is readable and consistent with approved sample.",
+        "recorded_at": "2026-09-25T04:39:01Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_05",
+      "number": 5,
+      "title": "四条复现路线比较",
+      "job": "prompts/slide_05.json",
+      "out": "origin_image/slide_05.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_03.png",
+          "role": "已批准样例，仅用于视觉风格参照",
+          "fidelity": "匹配配色、字重、密度和信息图气质；不复制页面布局或文字"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "main-wokey-retry",
+        "agent_nickname": "Wokey retry",
+        "prompt": "prompts/slide_05.json",
+        "prompt_sha256": "c2c5b7efb7ac1190121995e480ee9be9ead390e679602a03bfddd718bb0434e6",
+        "dispatched_at": "2026-09-25T04:38:15Z"
+      },
+      "result": {
+        "agent_id": "main-wokey-retry",
+        "backend_used": "Wokey GPT-image-2.5 direct API",
+        "selected_source": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_05.png",
+        "selected_source_sha256": "b67df5918dbd2bb8da4e1ae8176631dbaa7b35d3eb1a35884fa355a1cf5a9834",
+        "final_image": "origin_image/slide_05.png",
+        "final_image_sha256": "b67df5918dbd2bb8da4e1ae8176631dbaa7b35d3eb1a35884fa355a1cf5a9834",
+        "expected_backend": "Wokey GPT-image-2.5 direct API",
+        "expected_backend_labels": [
+          "Wokey GPT-image-2.5 direct API",
+          "Wokey /v1/images/generations direct HTTP"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Route comparison is readable; HD-1910 route is visually emphasized.",
+        "recorded_at": "2026-09-25T04:39:01Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_06",
+      "number": 6,
+      "title": "推荐硬件方案：HD-1910 路线",
+      "job": "prompts/slide_06.json",
+      "out": "origin_image/slide_06.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_03.png",
+          "role": "已批准样例，仅用于视觉风格参照",
+          "fidelity": "匹配配色、字重、密度和信息图气质；不复制页面布局或文字"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "main-wokey-retry",
+        "agent_nickname": "Wokey retry",
+        "prompt": "prompts/slide_06.json",
+        "prompt_sha256": "0528ae3ef4d38cdfbef9d926dafba89b962e1096831e2193e21d1db2c8794d22",
+        "dispatched_at": "2026-09-25T04:38:16Z"
+      },
+      "result": {
+        "agent_id": "main-wokey-retry",
+        "backend_used": "Wokey GPT-image-2.5 direct API",
+        "selected_source": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_06.png",
+        "selected_source_sha256": "189ebd3efc17183b1b1d1b2c6ceddf7472472c45b7ee3549ce962c85bb163d33",
+        "final_image": "origin_image/slide_06.png",
+        "final_image_sha256": "189ebd3efc17183b1b1d1b2c6ceddf7472472c45b7ee3549ce962c85bb163d33",
+        "expected_backend": "Wokey GPT-image-2.5 direct API",
+        "expected_backend_labels": [
+          "Wokey GPT-image-2.5 direct API",
+          "Wokey /v1/images/generations direct HTTP"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Hardware architecture labels are readable; no exact pinout is asserted.",
+        "recorded_at": "2026-09-25T04:39:02Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_07",
+      "number": 7,
+      "title": "从仿真到实体的实施路线",
+      "job": "prompts/slide_07.json",
+      "out": "origin_image/slide_07.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_03.png",
+          "role": "已批准样例，仅用于视觉风格参照",
+          "fidelity": "匹配配色、字重、密度和信息图气质；不复制页面布局或文字"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "main-wokey-retry",
+        "agent_nickname": "Wokey retry",
+        "prompt": "prompts/slide_07.json",
+        "prompt_sha256": "f6318a0712b72ca64acf5bb65ec3cea111b7310af14530c3e42e3c84e6b7c9e0",
+        "dispatched_at": "2026-09-25T04:38:16Z"
+      },
+      "result": {
+        "agent_id": "main-wokey-retry",
+        "backend_used": "Wokey GPT-image-2.5 direct API",
+        "selected_source": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_07.png",
+        "selected_source_sha256": "3fb61a633ecb006dd77c21ae1b62ae75e4a62370df40eb540220706c70edbdc8",
+        "final_image": "origin_image/slide_07.png",
+        "final_image_sha256": "3fb61a633ecb006dd77c21ae1b62ae75e4a62370df40eb540220706c70edbdc8",
+        "expected_backend": "Wokey GPT-image-2.5 direct API",
+        "expected_backend_labels": [
+          "Wokey GPT-image-2.5 direct API",
+          "Wokey /v1/images/generations direct HTTP"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Implementation roadmap is readable and consistent with the deck style.",
+        "recorded_at": "2026-09-25T04:39:02Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_08",
+      "number": 8,
+      "title": "软件与 sim2real 关键契约",
+      "job": "prompts/slide_08.json",
+      "out": "origin_image/slide_08.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_03.png",
+          "role": "已批准样例，仅用于视觉风格参照",
+          "fidelity": "匹配配色、字重、密度和信息图气质；不复制页面布局或文字"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "main-wokey-retry",
+        "agent_nickname": "Wokey retry",
+        "prompt": "prompts/slide_08.json",
+        "prompt_sha256": "1aae8821f541a8d0e750dc521d97ad5bdefa0ae00d55faaaa66f50781057d19e",
+        "dispatched_at": "2026-09-25T04:38:16Z"
+      },
+      "result": {
+        "agent_id": "main-wokey-retry",
+        "backend_used": "Wokey GPT-image-2.5 direct API",
+        "selected_source": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_08.png",
+        "selected_source_sha256": "9ffaf1db9ae32b6030d6943817791fc40d05d6336e104272872b21d27ea4890c",
+        "final_image": "origin_image/slide_08.png",
+        "final_image_sha256": "9ffaf1db9ae32b6030d6943817791fc40d05d6336e104272872b21d27ea4890c",
+        "expected_backend": "Wokey GPT-image-2.5 direct API",
+        "expected_backend_labels": [
+          "Wokey GPT-image-2.5 direct API",
+          "Wokey /v1/images/generations direct HTTP"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Sim2real loop is readable and mismatch risks are highlighted.",
+        "recorded_at": "2026-09-25T04:39:02Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_09",
+      "number": 9,
+      "title": "风险、踩坑与安全边界",
+      "job": "prompts/slide_09.json",
+      "out": "origin_image/slide_09.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_03.png",
+          "role": "已批准样例，仅用于视觉风格参照",
+          "fidelity": "匹配配色、字重、密度和信息图气质；不复制页面布局或文字"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "main-wokey-retry",
+        "agent_nickname": "Wokey retry",
+        "prompt": "prompts/slide_09.json",
+        "prompt_sha256": "90343a3a94e775b0f0bd39d2001287c524a5b02c262d968dc892706f70531321",
+        "dispatched_at": "2026-09-25T04:38:16Z"
+      },
+      "result": {
+        "agent_id": "main-wokey-retry",
+        "backend_used": "Wokey GPT-image-2.5 direct API",
+        "selected_source": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_09.png",
+        "selected_source_sha256": "d61ad35c8459ff7e1f42e49178b13469ee487a8fd3405900bc9d59c75d9f999d",
+        "final_image": "origin_image/slide_09.png",
+        "final_image_sha256": "d61ad35c8459ff7e1f42e49178b13469ee487a8fd3405900bc9d59c75d9f999d",
+        "expected_backend": "Wokey GPT-image-2.5 direct API",
+        "expected_backend_labels": [
+          "Wokey GPT-image-2.5 direct API",
+          "Wokey /v1/images/generations direct HTTP"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Risk matrix is readable and safety controls are clear.",
+        "recorded_at": "2026-09-25T04:39:02Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_10",
+      "number": 10,
+      "title": "验收标准与预期成果",
+      "job": "prompts/slide_10.json",
+      "out": "origin_image/slide_10.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_03.png",
+          "role": "已批准样例，仅用于视觉风格参照",
+          "fidelity": "匹配配色、字重、密度和信息图气质；不复制页面布局或文字"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "main-wokey-retry",
+        "agent_nickname": "Wokey retry",
+        "prompt": "prompts/slide_10.json",
+        "prompt_sha256": "20969d628ad5592dd6295a053d1dfe312468e2cfd7dfbeebf1caf76025dd2413",
+        "dispatched_at": "2026-09-25T04:38:16Z"
+      },
+      "result": {
+        "agent_id": "main-wokey-retry",
+        "backend_used": "Wokey GPT-image-2.5 direct API",
+        "selected_source": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_10.png",
+        "selected_source_sha256": "e449e02ed6ae3091a75428bf3dcf11b124ab3f19799c4716719978a0c2faeeeb",
+        "final_image": "origin_image/slide_10.png",
+        "final_image_sha256": "e449e02ed6ae3091a75428bf3dcf11b124ab3f19799c4716719978a0c2faeeeb",
+        "expected_backend": "Wokey GPT-image-2.5 direct API",
+        "expected_backend_labels": [
+          "Wokey GPT-image-2.5 direct API",
+          "Wokey /v1/images/generations direct HTTP"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Evaluation ladder clearly presents planned acceptance gates.",
+        "recorded_at": "2026-09-25T04:39:03Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_11",
+      "number": 11,
+      "title": "结论与下一步",
+      "job": "prompts/slide_11.json",
+      "out": "origin_image/slide_11.png",
+      "input_images": [
+        {
+          "path": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_03.png",
+          "role": "已批准样例，仅用于视觉风格参照",
+          "fidelity": "匹配配色、字重、密度和信息图气质；不复制页面布局或文字"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "main-wokey-retry",
+        "agent_nickname": "Wokey retry",
+        "prompt": "prompts/slide_11.json",
+        "prompt_sha256": "af0e7f713f8f19f3caf3702a30c3a61569a9ff5217a1d00b1d3f58fc278e95c6",
+        "dispatched_at": "2026-09-25T04:38:17Z"
+      },
+      "result": {
+        "agent_id": "main-wokey-retry",
+        "backend_used": "Wokey GPT-image-2.5 direct API",
+        "selected_source": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_11.png",
+        "selected_source_sha256": "2776723aa769b850e09907eddfd229c19e2c092fe48b8dc9a0f0f39253d764de",
+        "final_image": "origin_image/slide_11.png",
+        "final_image_sha256": "2776723aa769b850e09907eddfd229c19e2c092fe48b8dc9a0f0f39253d764de",
+        "expected_backend": "Wokey GPT-image-2.5 direct API",
+        "expected_backend_labels": [
+          "Wokey GPT-image-2.5 direct API",
+          "Wokey /v1/images/generations direct HTTP"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Conclusion and next steps are readable and recommendation is clear.",
+        "recorded_at": "2026-09-25T04:39:03Z"
+      },
+      "blocker": null
+    }
+  ],
+  "updated_at": "2026-09-25T04:39:03Z"
+}

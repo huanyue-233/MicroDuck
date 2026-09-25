@@ -1,0 +1,44 @@
+{
+  "slide": 1,
+  "title": "MicroDuck 复现方案",
+  "prompt": "# Codex PPT Slide Image Prompt\n\n## Canvas\n{\n  \"type\": \"16:9 full-slide PowerPoint image\",\n  \"language\": \"简体中文\",\n  \"slide_number\": 1,\n  \"render_slide_number\": false\n}\n\n## Deck Goal\n面向机器人研究与工程评审的 MicroDuck 复现方案学术汇报，说明开源资料、路线比较、实施方法和验收标准。\n\n## Required Background\n{\n  \"deck_context\": {\n    \"source\": \"复现方案总结报告.md，资料截止 2026-09-24；官方与社区项目分别标注。\",\n    \"core_claim\": \"MicroDuck 复现是机械、电气、运行时、策略与仿真五层系统集成。首次实体复现推荐 HD-1910 社区结构配合官方运行时思想，执行器参数需实测并重训。\",\n    \"evidence_boundary\": \"区分官方公开资料、社区逆向、台架实测和计划工作。不能声称 HD-1910 复刻已经稳定行走。生成式机器人图只是概念示意，不是实物证据。\",\n    \"canonical_terms\": [\n      \"MicroDuck\",\n      \"HD-1910\",\n      \"XL330\",\n      \"Radxa Zero 3W\",\n      \"RPI Robot HAT\",\n      \"imu_to_dxl\",\n      \"MJCF\",\n      \"MuJoCo\",\n      \"BAM\",\n      \"ONNX\",\n      \"sim2real\"\n    ]\n  },\n  \"slide_local_context\": {\n    \"caveat\": \"概念插画不是官方机器人实物照片。\"\n  }\n}\n\n## Global Style\n{\n  \"name\": \"清爽科研专业风（已批准样例）\",\n  \"visual_direction\": \"参考已批准的第 3 页：16:9 中国机器人学术汇报；白色/浅灰底、深海军蓝标题、青色与橙色点缀、淡技术网格、细线图标、留白充足。统一视觉但每页布局按内容变化，不复制五层堆栈。\",\n  \"color_palette\": \"白色 #FFFFFF，浅灰 #F7F9FC，深蓝 #0D2445，青色 #15A9B8，克制的橙色 #E98B39\",\n  \"typography\": \"清晰的简体中文无衬线字体；大标题、短标签、可投影阅读的正文。必须正确书写汉字，禁止问号或乱码。\",\n  \"density\": \"每页一个核心结论、3–5 个短标签，避免段落、微小脚注和过密图文。\",\n  \"image_treatment\": \"矢量感科研信息图；机器人形象仅作概念示意，不作为已验证实物照片。\"\n}\n\n## Input Images\n\n- Image 1: C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_03.png — 已批准样例，仅用于视觉风格参照; 匹配配色、字重、密度和信息图气质；不复制页面布局或文字\n\n\n## Slide\n{\n  \"number\": 1,\n  \"title\": \"MicroDuck 复现方案\",\n  \"role\": \"封面\",\n  \"intent\": \"建立主题和研究目标\"\n}\n\n## Text\n{\n  \"title\": \"MicroDuck 复现方案\",\n  \"key_points\": [\n    \"从开源资料到可运行实体\",\n    \"机械 × 电控 × 实时控制 × 强化学习\",\n    \"资料截止：2026-09-24\"\n  ],\n  \"speaker_focus\": null\n}\n\n## Layout\n{\n  \"intent\": \"建立主题和研究目标\",\n  \"composition\": \"左侧大标题和两行副标题，右侧为实验室中的双足鸭形机器人概念插画。留白充分。\"\n}\n\n## Visual Elements\n{\n  \"rendering\": \"与已批准样例一致的清爽科研信息图，图标语言统一\"\n}\n\n## Constraints\n[\n  \"仅使用给定中文标题和短标签，禁止编造额外结论。\",\n  \"汉字必须正确，不得出现问号、乱码、虚假引用、水印、logo 或页码。\",\n  \"16:9 横版，投影可读，保留安全边距。\",\n  \"每页变化布局，但与第 3 页配色和视觉层次一致。\"\n]\n\n## Style Reference Rule\nUse Image 1 as the approved sample-slide style reference. Match its palette, typography mood, density, texture, and overall visual identity. Do not copy its exact layout unless this slide's layout explicitly asks for it.\n\n## Input Image Handling Rules\nFor any input image marked as a strict input asset, include it visibly and preserve its content. Do not redraw, replace, relabel, or invent a similar figure. Scale and crop only as needed for composition while keeping the important labels, arrows, data, and relationships recognizable.\n\n## Universal Constraints\n- The final image itself must contain the title and key points.\n- Render Chinese text exactly and legibly; avoid garbled characters.\n- Keep the confirmed deck style consistent while varying layout by slide role.\n- No watermark, unrelated logo, or extra slide number.\n",
+  "out": "slide_01.png",
+  "input_images": [
+    {
+      "path": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_03.png",
+      "role": "已批准样例，仅用于视觉风格参照",
+      "fidelity": "匹配配色、字重、密度和信息图气质；不复制页面布局或文字"
+    }
+  ],
+  "requires_context_images": true,
+  "expected_backend": "Wokey GPT-image-2.5 direct API",
+  "sample_generation_method": {
+    "backend_used": "Wokey GPT-image-2.5 direct API",
+    "tool_name": "Wokey /v1/images/generations direct HTTP",
+    "mode": "generate",
+    "model": "gpt-image-2.5",
+    "size_requested": "2560x1440",
+    "size_returned": "1672x941",
+    "quality": "provider auto",
+    "prompt_source": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\sample_slide_03_prompt.txt",
+    "approved_sample_path": "C:\\Users\\Administrator\\Desktop\\MicroDuck\\report\\origin_image\\slide_03.png",
+    "input_context_preparation": "工作者先查看第 3 页样例，然后用完整文字风格说明调用 Wokey 文生图；样例不是严格输入资产。",
+    "handoff_rule": "沿用 Wokey gpt-image-2.5 直接 API、支持异步任务。不得用本地绘图叠字；API 不可用时报告阻塞。"
+  },
+  "generation_contract": {
+    "must_use_selected_image_backend": true,
+    "must_match_sample_generation_method": true,
+    "forbidden_final_image_methods": [
+      "local drawing/rendering scripts",
+      "Pillow-generated slides",
+      "SVG/HTML/CSS/canvas screenshots",
+      "python-pptx/PptxGenJS/native PPT layout screenshots",
+      "manually composited text/image overlays"
+    ],
+    "must_return": [
+      "backend_used",
+      "selected_source",
+      "qa_note"
+    ]
+  }
+}

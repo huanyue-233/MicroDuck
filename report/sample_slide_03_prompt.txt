@@ -1,0 +1,17 @@
+﻿Create exactly one polished 16:9 widescreen academic presentation slide for a robotics systems report, 2560x1440 composition.
+
+Visual direction: clean research-professional style (Style A): white and very light gray background, dark navy typography, teal and orange accents, generous whitespace, crisp vector-like infographic, subtle technical grid lines, restrained shadows, no decorative clutter. The slide must look like a serious Chinese university robotics lab presentation, not an advertisement.
+
+Slide title at top left, rendered exactly and legibly in simplified Chinese:
+“MicroDuck 的五层系统模型”
+Subtitle below it, rendered exactly:
+“复现必须同时满足机械、电气、运行时、策略与仿真”
+
+Main visual: a centered five-layer vertical stack / systems architecture diagram. Each layer is a large rounded rectangle with a distinct accent color and a small minimal line icon. From bottom to top, label the layers exactly as follows, with concise English keywords in smaller text if helpful:
+1. “仿真层” — MJCF / MuJoCo / PPO / sim2real
+2. “策略层” — 61 维观测 → 14 维动作 → ONNX
+3. “运行时层” — Rust daemon / 50 Hz / safety layer
+4. “电气层” — servo bus / IMU / HAT / battery
+5. “机械层” — bipedal duck / 15 servos / printed structure
+
+Use a clear upward arrow or subtle connector showing that the layers depend on one another, and a small right-side annotation “跨层接口必须一致” with a thin callout line. Keep the slide balanced and readable from a projector. Do not add any extra paragraphs, fake citations, logos, watermarks, page numbers, or unrelated objects. Preserve exact Chinese text; do not invent or misspell labels.
